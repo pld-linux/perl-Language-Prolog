@@ -39,7 +39,7 @@ Modu³ perla Language::Prolog::Interpreter.
 
 %build
 touch Makefile.PL; mkdir lib; mv Language lib
-perl -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"Language::Prolog")'
+%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"Language::Prolog")'
 %{__make}
 
 %install
