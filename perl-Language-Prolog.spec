@@ -5,7 +5,7 @@ Summary:	Language::Prolog perl modules
 Summary(pl):	Modu³y perla Language::Prolog
 Name:		perl-Language-Prolog
 Version:	alpha
-Release:	3
+Release:	4
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
