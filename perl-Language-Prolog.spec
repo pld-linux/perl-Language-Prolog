@@ -37,12 +37,15 @@ Modu³ perla Language::Prolog::Interpreter.
 %prep
 %setup -q -c
 
+%build
+touch Makefile.PL; mkdir lib; mv Language lib
+perl -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"Language::Prolog")'
+%{__make}
+
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{perl_sitelib}/Language/Prolog
 
-install Language/Prolog.pm $RPM_BUILD_ROOT%{perl_sitelib}/Language
-install Language/Prolog/*.pm $RPM_BUILD_ROOT%{perl_sitelib}/Language/Prolog
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
