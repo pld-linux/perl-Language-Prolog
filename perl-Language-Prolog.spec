@@ -5,7 +5,7 @@ Summary:	Language::Prolog perl modules
 Summary(pl):	Modu³y perla Language::Prolog
 Name:		perl-Language-Prolog
 Version:	alpha
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
@@ -13,6 +13,8 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreqdep	'perl(Language::Prolog::Interpreter)'
 
 %description
 Language::Prolog perl modules - Prolog interpreter.
