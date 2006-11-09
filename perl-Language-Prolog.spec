@@ -27,7 +27,7 @@ Modu³y perla Language::Prolog - interpreter Prologa.
 Summary:	Language::Prolog::Interpreter perl module
 Summary(pl):	Modu³ perla Language::Prolog::Interpreter
 Group:		Development/Languages/Perl
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description Interpreter
 Language::Prolog::Interpreter perl module.
