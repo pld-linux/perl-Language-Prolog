@@ -2,7 +2,7 @@
 %define		pdir	Language
 %define		pnam	Prolog
 Summary:	Language::Prolog perl modules
-Summary(pl):	Modu≥y perla Language::Prolog
+Summary(pl.UTF-8):   Modu≈Çy perla Language::Prolog
 Name:		perl-Language-Prolog
 Version:	alpha
 Release:	4
@@ -20,20 +20,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Language::Prolog perl modules - Prolog interpreter.
 
-%description -l pl
-Modu≥y perla Language::Prolog - interpreter Prologa.
+%description -l pl.UTF-8
+Modu≈Çy perla Language::Prolog - interpreter Prologa.
 
 %package Interpreter
 Summary:	Language::Prolog::Interpreter perl module
-Summary(pl):	Modu≥ perla Language::Prolog::Interpreter
+Summary(pl.UTF-8):   Modu≈Ç perla Language::Prolog::Interpreter
 Group:		Development/Languages/Perl
 Requires:	%{name} = %{version}-%{release}
 
 %description Interpreter
 Language::Prolog::Interpreter perl module.
 
-%description Interpreter -l pl
-Modu≥ perla Language::Prolog::Interpreter.
+%description Interpreter -l pl.UTF-8
+Modu≈Ç perla Language::Prolog::Interpreter.
 
 %prep
 %setup -q -c
