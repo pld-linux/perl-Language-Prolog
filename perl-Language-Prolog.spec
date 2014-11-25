@@ -1,6 +1,6 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Language
 %define		pnam	Prolog
+%include	/usr/lib/rpm/macros.perl
 Summary:	Language::Prolog perl modules
 Summary(pl.UTF-8):	Moduły perla Language::Prolog
 Name:		perl-Language-Prolog
@@ -10,6 +10,7 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	5711cc77c433e5943f61b7557dd11c05
+URL:		http://search.cpan.org/dist/Language-Prolog/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
