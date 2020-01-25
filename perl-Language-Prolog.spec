@@ -1,6 +1,5 @@
 %define		pdir	Language
 %define		pnam	Prolog
-%include	/usr/lib/rpm/macros.perl
 Summary:	Language::Prolog perl modules
 Summary(pl.UTF-8):	Moduły perla Language::Prolog
 Name:		perl-Language-Prolog
